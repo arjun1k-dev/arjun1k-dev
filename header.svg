@@ -60,7 +60,7 @@
 
     <!-- Subtitle with typing reveal -->
     <text x="400" y="180" font-family="'Courier New', monospace" font-size="20" fill="#00ffff" text-anchor="middle" filter="url(#glow)">
-        BUILDING SYNAPTIC SYSTEMS
+        BUILDING CRAZY SYSTEMS
         <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/>
     </text>
 
