@@ -9,11 +9,11 @@
     <!-- Command lines revealed with staggered opacity -->
     <g font-family="Courier New, monospace" font-size="14" fill="#00ffcc">
         <!-- Line 1 -->
-        <text x="20" y="55" opacity="0">$ git clone https://github.com/SkyArjun99/synapse.git
+        <text x="20" y="55" opacity="0">$ git clone https://github.com/arjun1k-dev/synapse-pkm.git
             <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.5s" fill="freeze"/>
         </text>
         <!-- Line 2 -->
-        <text x="20" y="75" opacity="0">$ cd synapse
+        <text x="20" y="75" opacity="0">$ cd synapse-pkm
             <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
         </text>
         <!-- Line 3 -->

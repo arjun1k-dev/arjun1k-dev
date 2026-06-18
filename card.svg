@@ -29,13 +29,13 @@
 
         <rect x="0" y="0" width="700" height="150" class="card-main" />
 
-        <text x="30" y="60" class="title">SYNAPSE_COMPOSITOR</text>
+        <text x="30" y="60" class="title">SYNAPSE_PKM</text>
         <text x="30" y="95" class="mono-text">MEMORY_SAFE_RENDERING_ENGINE</text>
 
         <rect x="30" y="115" width="80" height="24" class="tag-pink" />
-        <text x="70" y="133" text-anchor="middle" class="mono-text" font-size="14">RUST</text>
+        <text x="70" y="133" text-anchor="middle" class="mono-text" font-size="14">NEXT.JS</text>
 
         <rect x="125" y="115" width="80" height="24" class="tag-cyan" />
-        <text x="165" y="133" text-anchor="middle" class="mono-text" font-size="14">C++</text>
+        <text x="165" y="133" text-anchor="middle" class="mono-text" font-size="14">TS</text>
     </g>
 </svg>

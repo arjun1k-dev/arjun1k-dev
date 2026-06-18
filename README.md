@@ -44,4 +44,4 @@ Every idea is a **Node**, every relationship an **Edge**.
 
 > *"The graph becomes a mirror of your understanding."*
 
-[📖 Full Documentation](https://github.com/SkyArjun99/synapse) <!-- You can link to your detailed readme if you add it -->
+[📖 Full Documentation](https://github.com/arjun1k-dev/synapse-pkm) <!-- You can link to your detailed readme if you add it -->
