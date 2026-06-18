@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+    <defs>
+        <!-- Glow filter -->
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <!-- Radial gradient for orbs -->
+        <radialGradient id="orbGrad" cx="30%" cy="30%">
+            <stop offset="0%" stop-color="#00ffff" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#0066ff" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="800" height="400" fill="#0a0a0f" />
+
+    <!-- Animated grid lines -->
+    <g opacity="0.07">
+        <line x1="0" y1="100" x2="800" y2="100" stroke="#00ffff" stroke-width="1">
+            <animate attributeName="x2" values="800;0;800" dur="8s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="200" x2="800" y2="200" stroke="#00ffff" stroke-width="1">
+            <animate attributeName="x2" values="0;800;0" dur="8s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="300" x2="800" y2="300" stroke="#00ffff" stroke-width="1">
+            <animate attributeName="x2" values="800;0;800" dur="8s" repeatCount="indefinite" />
+        </line>
+        <line x1="200" y1="0" x2="200" y2="400" stroke="#00ffff" stroke-width="1">
+            <animate attributeName="y2" values="0;400;0" dur="10s" repeatCount="indefinite" />
+        </line>
+        <line x1="400" y1="0" x2="400" y2="400" stroke="#00ffff" stroke-width="1">
+            <animate attributeName="y2" values="400;0;400" dur="10s" repeatCount="indefinite" />
+        </line>
+        <line x1="600" y1="0" x2="600" y2="400" stroke="#00ffff" stroke-width="1">
+            <animate attributeName="y2" values="0;400;0" dur="10s" repeatCount="indefinite" />
+        </line>
+    </g>
+
+    <!-- Typing text: characters appear one by one -->
+    <g font-family="monospace" font-size="28" fill="#00ffcc" filter="url(#glow)">
+        <!-- First line: "INITIALIZING PROFILE..." -->
+        <text x="50" y="150">
+            <tspan>I</tspan><tspan>N</tspan><tspan>I</tspan><tspan>T</tspan><tspan>I</tspan><tspan>A</tspan><tspan>L</tspan><tspan>I</tspan><tspan>Z</tspan><tspan>I</tspan><tspan>N</tspan><tspan>G</tspan><tspan> </tspan><tspan>P</tspan><tspan>R</tspan><tspan>O</tspan><tspan>F</tspan><tspan>I</tspan><tspan>L</tspan><tspan>E</tspan><tspan>.</tspan><tspan>.</tspan><tspan>.</tspan>
+            <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0;0.02;1" dur="3s" begin="0s" repeatCount="indefinite" />
+        </text>
+
+        <!-- Second line: "WELCOME TO MY WORLD" (appears after first line finishes) -->
+        <text x="50" y="220" opacity="0">
+            <tspan>W</tspan><tspan>E</tspan><tspan>L</tspan><tspan>C</tspan><tspan>O</tspan><tspan>M</tspan><tspan>E</tspan><tspan> </tspan><tspan>T</tspan><tspan>O</tspan><tspan> </tspan><tspan>M</tspan><tspan>Y</tspan><tspan> </tspan><tspan>W</tspan><tspan>O</tspan><tspan>R</tspan><tspan>L</tspan><tspan>D</tspan>
+            <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0;0.02;1" dur="3s" begin="3.2s" repeatCount="indefinite" />
+        </text>
+    </g>
+
+    <!-- Blinking cursor (underscore) -->
+    <text x="735" y="150" font-family="monospace" font-size="28" fill="#00ffcc" filter="url(#glow)">
+        _
+        <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.2;0.21;0.3;0.31;1" dur="1s" repeatCount="indefinite" />
+    </text>
+
+    <!-- Floating orbs with rotate animation -->
+    <circle cx="150" cy="80" r="40" fill="url(#orbGrad)">
+        <animateTransform attributeName="transform" type="rotate" from="0 150 80" to="360 150 80" dur="20s" repeatCount="indefinite" />
+        <animate attributeName="cx" values="150;180;150;120;150" dur="6s" repeatCount="indefinite" />
+        <animate attributeName="cy" values="80;100;80;60;80" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="320" r="30" fill="url(#orbGrad)">
+        <animateTransform attributeName="transform" type="rotate" from="360 650 320" to="0 650 320" dur="15s" repeatCount="indefinite" />
+        <animate attributeName="cx" values="650;680;650;620;650" dur="7s" repeatCount="indefinite" />
+        <animate attributeName="cy" values="320;340;320;300;320" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="350" r="20" fill="url(#orbGrad)">
+        <animateTransform attributeName="transform" type="rotate" from="0 400 350" to="360 400 350" dur="12s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Status line at bottom -->
+    <text x="50" y="370" font-family="monospace" font-size="16" fill="#666">
+        SYS.READY : TRUE | PROJECTS : LOADING...
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+    </text>
+</svg>

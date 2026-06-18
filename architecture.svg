@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+    <defs>
+        <filter id="glow-pink"><feGaussianBlur stdDeviation="2"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="glow-cyan"><feGaussianBlur stdDeviation="2"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <rect width="800" height="300" fill="#11111b"/>
+
+    <!-- CLIENT LAYER -->
+    <g>
+        <rect x="50" y="40" width="700" height="60" fill="none" stroke="#ff00ff" stroke-width="2" opacity="0.6"/>
+        <text x="400" y="65" font-family="Courier New, monospace" font-size="14" fill="#ff00ff" text-anchor="middle">CLIENT LAYER</text>
+        <!-- Sub-boxes -->
+        <rect x="70" y="70" width="180" height="24" fill="#1a1a2e" stroke="#ff00ff" stroke-width="1"/>
+        <text x="160" y="85" font-family="Courier New, monospace" font-size="12" fill="#ff00ff" text-anchor="middle">Next.js (App Router)</text>
+        <rect x="270" y="70" width="160" height="24" fill="#1a1a2e" stroke="#ff00ff" stroke-width="1"/>
+        <text x="350" y="85" font-family="Courier New, monospace" font-size="12" fill="#ff00ff" text-anchor="middle">React Flow (Graph UI)</text>
+        <rect x="450" y="70" width="140" height="24" fill="#1a1a2e" stroke="#ff00ff" stroke-width="1"/>
+        <text x="520" y="85" font-family="Courier New, monospace" font-size="12" fill="#ff00ff" text-anchor="middle">Tailwind CSS</text>
+    </g>
+
+    <!-- Arrow with moving pulse -->
+    <line x1="400" y1="100" x2="400" y2="130" stroke="#00ffff" stroke-width="2">
+        <animate attributeName="y2" values="100;130;100" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="400" cy="100" r="3" fill="#00ffff">
+        <animate attributeName="cy" values="100;130;100" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- APPLICATION LAYER -->
+    <g>
+        <rect x="50" y="140" width="700" height="60" fill="none" stroke="#00ffff" stroke-width="2" opacity="0.6"/>
+        <text x="400" y="165" font-family="Courier New, monospace" font-size="14" fill="#00ffff" text-anchor="middle">APPLICATION LAYER</text>
+        <rect x="70" y="170" width="200" height="24" fill="#1a1a2e" stroke="#00ffff" stroke-width="1"/>
+        <text x="170" y="185" font-family="Courier New, monospace" font-size="12" fill="#00ffff" text-anchor="middle">FastAPI (async Python)</text>
+        <rect x="290" y="170" width="160" height="24" fill="#1a1a2e" stroke="#00ffff" stroke-width="1"/>
+        <text x="370" y="185" font-family="Courier New, monospace" font-size="12" fill="#00ffff" text-anchor="middle">Pydantic Validation</text>
+        <rect x="470" y="170" width="140" height="24" fill="#1a1a2e" stroke="#00ffff" stroke-width="1"/>
+        <text x="540" y="185" font-family="Courier New, monospace" font-size="12" fill="#00ffff" text-anchor="middle">CORS Middleware</text>
+    </g>
+
+    <!-- Arrow down -->
+    <line x1="400" y1="200" x2="400" y2="230" stroke="#ff00ff" stroke-width="2">
+        <animate attributeName="y2" values="200;230;200" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="400" cy="200" r="3" fill="#ff00ff">
+        <animate attributeName="cy" values="200;230;200" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- DATA LAYER -->
+    <g>
+        <rect x="50" y="240" width="700" height="50" fill="none" stroke="#ffdf00" stroke-width="2" opacity="0.6"/>
+        <text x="400" y="260" font-family="Courier New, monospace" font-size="14" fill="#ffdf00" text-anchor="middle">DATA LAYER (PostgreSQL 15)</text>
+        <rect x="70" y="265" width="120" height="20" fill="#1a1a2e" stroke="#ffdf00" stroke-width="1"/>
+        <text x="130" y="278" font-family="Courier New, monospace" font-size="10" fill="#ffdf00" text-anchor="middle">Nodes Table</text>
+        <rect x="210" y="265" width="120" height="20" fill="#1a1a2e" stroke="#ffdf00" stroke-width="1"/>
+        <text x="270" y="278" font-family="Courier New, monospace" font-size="10" fill="#ffdf00" text-anchor="middle">Edges Table</text>
+        <rect x="350" y="265" width="120" height="20" fill="#1a1a2e" stroke="#ffdf00" stroke-width="1"/>
+        <text x="410" y="278" font-family="Courier New, monospace" font-size="10" fill="#ffdf00" text-anchor="middle">TSVector Search</text>
+    </g>
+</svg>

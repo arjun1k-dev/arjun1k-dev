@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="100%" height="100%">
+    <defs>
+        <filter id="neon">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+    </defs>
+    <rect width="800" height="120" fill="#0a0a14"/>
+
+    <!-- Pill container -->
+    <g font-family="'Courier New', monospace" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">
+        <g>
+            <rect x="40" y="30" width="100" height="30" rx="15" fill="#ff90e8" stroke="#000" stroke-width="2" filter="url(#neon)"/>
+            <text x="90" y="50" fill="#000">NEXT.JS</text>
+            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="3s" repeatCount="indefinite"/>
+        </g>
+        <g>
+            <rect x="160" y="30" width="80" height="30" rx="15" fill="#4dffff" stroke="#000" stroke-width="2" filter="url(#neon)"/>
+            <text x="200" y="50" fill="#000">FASTAPI</text>
+            <animateTransform attributeName="transform" type="translate" values="0,0; 0,8; 0,0" dur="3.5s" repeatCount="indefinite"/>
+        </g>
+        <g>
+            <rect x="260" y="30" width="110" height="30" rx="15" fill="#ffdf00" stroke="#000" stroke-width="2" filter="url(#neon)"/>
+            <text x="315" y="50" fill="#000">PYTHON</text>
+            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="2.8s" repeatCount="indefinite"/>
+        </g>
+        <g>
+            <rect x="390" y="30" width="140" height="30" rx="15" fill="#ff90e8" stroke="#000" stroke-width="2" filter="url(#neon)"/>
+            <text x="460" y="50" fill="#000">TYPESCRIPT</text>
+            <animateTransform attributeName="transform" type="translate" values="0,0; 0,7; 0,0" dur="4s" repeatCount="indefinite"/>
+        </g>
+        <g>
+            <rect x="550" y="30" width="120" height="30" rx="15" fill="#4dffff" stroke="#000" stroke-width="2" filter="url(#neon)"/>
+            <text x="610" y="50" fill="#000">POSTGRES</text>
+            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="3.2s" repeatCount="indefinite"/>
+        </g>
+        <g>
+            <rect x="690" y="30" width="70" height="30" rx="15" fill="#ff00ff" stroke="#000" stroke-width="2" filter="url(#neon)"/>
+            <text x="725" y="50" fill="#000">DOCKER</text>
+            <animateTransform attributeName="transform" type="translate" values="0,0; 0,5; 0,0" dur="2.6s" repeatCount="indefinite"/>
+        </g>
+    </g>
+</svg>

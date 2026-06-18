@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
+    <defs>
+        <filter id="shadow">
+            <feDropShadow dx="8" dy="8" stdDeviation="0" flood-color="#000"/>
+        </filter>
+        <style>
+            .card-main { fill: #ffdf00; stroke: #000; stroke-width: 4; }
+            .tag { stroke: #000; stroke-width: 3; }
+            .title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 36px; font-weight: 900; fill: #000; }
+            .desc { font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; fill: #000; }
+            .tag-text { font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; fill: #000; text-anchor: middle; }
+            /* Bounce animation */
+            @keyframes bounce {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-4px, -4px); }
+            }
+            .bounce { animation: bounce 1s steps(2) infinite; }
+        </style>
+    </defs>
+
+    <!-- Bouncing group -->
+    <g class="bounce">
+        <!-- Hard shadow -->
+        <rect x="58" y="58" width="700" height="150" fill="#000" filter="url(#shadow)"/>
+        <!-- Card body -->
+        <rect x="50" y="50" width="700" height="150" class="card-main"/>
+
+        <!-- Project name -->
+        <text x="80" y="100" class="title">SYNAPSE</text>
+        <!-- Description -->
+        <text x="80" y="135" class="desc">GRAPH-BASED PKM SYSTEM FOR ENGINEERS</text>
+
+        <!-- Tags -->
+        <rect x="80" y="155" width="90" height="24" fill="#ff90e8" class="tag" />
+        <text x="125" y="172" class="tag-text">RUST</text>
+
+        <rect x="180" y="155" width="70" height="24" fill="#4dffff" class="tag" />
+        <text x="215" y="172" class="tag-text">C++</text>
+
+        <rect x="260" y="155" width="110" height="24" fill="#ffdf00" stroke="#000" stroke-width="3" />
+        <text x="315" y="172" class="tag-text">PYTHON</text>
+
+        <!-- Animated dot on corner -->
+        <circle cx="720" cy="70" r="8" fill="#ff00ff">
+            <animate attributeName="r" values="8;12;8" dur="1s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg>
