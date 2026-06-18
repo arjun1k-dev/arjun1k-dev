@@ -32,13 +32,13 @@
 
         <!-- Tags -->
         <rect x="80" y="155" width="90" height="24" fill="#ff90e8" class="tag" />
-        <text x="125" y="172" class="tag-text">RUST</text>
+        <text x="125" y="172" class="tag-text">NEXT.JS</text>
 
-        <rect x="180" y="155" width="70" height="24" fill="#4dffff" class="tag" />
-        <text x="215" y="172" class="tag-text">C++</text>
+        <rect x="180" y="155" width="110" height="24" fill="#4dffff" class="tag" />
+        <text x="235" y="172" class="tag-text">TYPESCRIPT</text>
 
-        <rect x="260" y="155" width="110" height="24" fill="#ffdf00" stroke="#000" stroke-width="3" />
-        <text x="315" y="172" class="tag-text">PYTHON</text>
+        <rect x="300" y="155" width="110" height="24" fill="#90EE90" stroke="#000" stroke-width="3" />
+        <text x="355" y="172" class="tag-text">PYTHON</text>
 
         <!-- Animated dot on corner -->
         <circle cx="720" cy="70" r="8" fill="#ff00ff">
