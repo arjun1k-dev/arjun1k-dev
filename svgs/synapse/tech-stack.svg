@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280">
+  <rect width="800" height="280" fill="#0a0a14"/>
+  <!-- Section label -->
+  <text x="400" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#ffffff" opacity="0.3">// TECH STACK</text>
+  <!-- Pill groups — vertical layout in narrow column -->
+  <!-- NEXT.JS -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3.1s" repeatCount="indefinite"/>
+    <rect x="300" y="50" width="200" height="32" rx="16" fill="#ff90e8" stroke="#000000" stroke-width="2"/>
+    <text x="400" y="71" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#000000">NEXT.JS 14</text>
+  </g>
+  <!-- REACT FLOW -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3.7s" repeatCount="indefinite"/>
+    <rect x="300" y="96" width="200" height="32" rx="16" fill="#4dffff" stroke="#000000" stroke-width="2"/>
+    <text x="400" y="117" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#000000">REACT FLOW</text>
+  </g>
+  <!-- FASTAPI -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="2.8s" repeatCount="indefinite"/>
+    <rect x="300" y="142" width="200" height="32" rx="16" fill="#ffdf00" stroke="#000000" stroke-width="2"/>
+    <text x="400" y="163" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#000000">FASTAPI</text>
+  </g>
+  <!-- PYTHON -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="4.3s" repeatCount="indefinite"/>
+    <rect x="300" y="188" width="200" height="32" rx="16" fill="#ff90e8" stroke="#000000" stroke-width="2"/>
+    <text x="400" y="209" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#000000">PYTHON 3.12</text>
+  </g>
+  <!-- POSTGRESQL -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3.3s" repeatCount="indefinite"/>
+    <rect x="300" y="234" width="200" height="32" rx="16" fill="#4dffff" stroke="#000000" stroke-width="2"/>
+    <text x="400" y="255" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#000000">POSTGRESQL</text>
+  </g>
+</svg>

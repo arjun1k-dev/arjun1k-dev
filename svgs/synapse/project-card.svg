@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280">
+  <defs>
+    <linearGradient id="pc-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffdf00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffdf00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes pc-bounce {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-4px, -4px); }
+    }
+    .pc-card { animation: pc-bounce 1s steps(2) infinite; }
+  </style>
+  <!-- Background -->
+  <rect width="800" height="280" fill="#0a0a14"/>
+  <!-- Faint grid -->
+  <line x1="0" y1="0" x2="800" y2="0" stroke="#1a1a2e" stroke-width="1"/>
+  <!-- Bouncing card group -->
+  <g class="pc-card">
+    <!-- Hard shadow -->
+    <rect x="48" y="28" width="680" height="224" fill="#000000" rx="0"/>
+    <!-- Main card -->
+    <rect x="40" y="20" width="680" height="224" fill="#ffdf00" stroke="#000000" stroke-width="4" rx="0"/>
+    <!-- Glow overlay -->
+    <rect x="40" y="20" width="680" height="40" fill="url(#pc-glow)"/>
+    <!-- Project title -->
+    <text x="380" y="80" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="56" font-weight="bold" fill="#000000">SYNAPSE-PKM</text>
+    <!-- Subtitle -->
+    <text x="380" y="115" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#000000" opacity="0.7">GRAPH-BASED PKM SYSTEM FOR ENGINEERS</text>
+    <!-- Description -->
+    <text x="380" y="145" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#000000" opacity="0.6">Transform fragmented notes into an interconnected semantic network.</text>
+    <!-- Tags -->
+    <!-- NEXT.JS pill -->
+    <rect x="175" y="170" width="90" height="30" rx="15" fill="#ff90e8" stroke="#000000" stroke-width="2"/>
+    <text x="220" y="190" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#000000">NEXT.JS</text>
+    <!-- PYTHON pill -->
+    <rect x="280" y="170" width="90" height="30" rx="15" fill="#4dffff" stroke="#000000" stroke-width="2"/>
+    <text x="325" y="190" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#000000">PYTHON</text>
+    <!-- FASTAPI pill -->
+    <rect x="385" y="170" width="90" height="30" rx="15" fill="#90EE90" stroke="#000000" stroke-width="2"/>
+    <text x="430" y="190" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#000000">FASTAPI</text>
+    <!-- POSTGRES pill -->
+    <rect x="490" y="170" width="100" height="30" rx="15" fill="#ff90e8" stroke="#000000" stroke-width="2"/>
+    <text x="540" y="190" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#000000">POSTGRES</text>
+    <!-- DOCKER pill -->
+    <rect x="270" y="210" width="90" height="24" rx="12" fill="#4dffff" stroke="#000000" stroke-width="2"/>
+    <text x="315" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#000000">DOCKER</text>
+    <!-- REACT FLOW pill -->
+    <rect x="400" y="210" width="110" height="24" rx="12" fill="#90EE90" stroke="#000000" stroke-width="2"/>
+    <text x="455" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#000000">REACT FLOW</text>
+    <!-- Pulsing corner dot -->
+    <circle cx="700" cy="32" r="8" fill="#ff00ff" opacity="0.8">
+      <animate attributeName="r" values="8;12;8" dur="2.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
